@@ -1,0 +1,156 @@
+/* reset */
+body {
+  margin: 0;
+  background-image: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Hind", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: visible;
+  cursor: pointer;
+  color: rgb(0, 178, 0);
+}
+
+button.fa-solid.fa-trash {
+  color: rgb(250, 42, 42);
+  margin-right: 0px;
+}
+button.fa-arrow-rotate-left {
+  color: #8f8f8f;
+}
+
+#add-button {
+  color: black;
+  background-color: rgb(219, 194, 227);
+}
+
+#add-button:hover {
+  background-color: rgb(168, 114, 187);
+}
+
+.container {
+  border-top: 10px solid rgb(192, 165, 209);
+  border-bottom: 10px solid rgb(192, 165, 209);
+  background-color: whitesmoke;
+  min-height: 100vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.input-area {
+  position: relative;
+}
+.task-area {
+  border: 1px solid rgb(230, 186, 201);
+  margin-top: 1em;
+}
+
+#task-input {
+  width: 80%;
+  border: none;
+  background-color: #f5f5f5;
+  border: 1px solid rgb(230, 186, 201);
+  transition: padding-top 0.2 ease, margin-top 0.2s ease;
+  transition: 0.5s;
+}
+
+#task-input:focus {
+  outline: none;
+  border-bottom: 3px solid plum;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding-top: 35px;
+}
+
+#task-input + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  font-size: 14px;
+  color: #8f8f8f;
+  top: 4px;
+  left: 10px;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+#task-input:focus + label > span {
+  top: 0;
+  color: #333;
+}
+
+.task-tabs {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid rgb(230, 186, 201);
+}
+
+.task-tabs div {
+  padding: 1em;
+  cursor: pointer;
+}
+
+#under_line {
+  width: 80px;
+  position: absolute;
+  left: 0px;
+  top: 52px;
+  height: 4px;
+  background-color: rgb(189, 189, 253);
+  transition: 0.5s;
+  padding: 0px;
+}
+
+.task {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.task-done {
+  text-decoration: line-through;
+  padding: 1rem;
+}
+.task-dnt {
+  padding: 1rem;
+}
+
+.button-box {
+  display: flex;
+}
+
+.button-box button {
+  height: 100%;
+  border: none;
+  width: 5em;
+  margin: 0;
+  background-color: whitesmoke;
+  transition: 0.5s;
+}
+
+.button-box button:first-child:hover {
+  background-color: greenyellow;
+}
+
+.button-box button:nth-child(2):hover {
+  background-color: rgb(255, 0, 0, 0.3);
+}
+
+/* 
+@media screen and (max-width: 767px)  {
+
+
+  .container{
+    width: 95%;
+  }
+
+} */
